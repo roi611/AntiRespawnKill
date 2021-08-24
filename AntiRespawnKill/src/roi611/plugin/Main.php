@@ -97,6 +97,7 @@ class Main extends PluginBase implements Listener{
 
                 if($inventory->isSlotEmpty(8)){
 
+		    $player->sendMessage(§aメニューを取得しました！);
                     $item = Item::get(450,0,1);
                     $item->setCustomName('§aメニュー');
                     $inventory->setItem(8,$item);
@@ -108,6 +109,7 @@ class Main extends PluginBase implements Listener{
                     $new->setCustomName('§aメニュー');
                     if($inventory->canAddItem($new)){
 
+			$player->sendMessage(§aメニューを取得しました！);
                         $old = $inventory->getHotBarSlotItem(8);
                         $inventory->setItem(8,$new);
                         $inventory->addItem($old);

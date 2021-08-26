@@ -1,0 +1,7 @@
+name: AntiRespawnKill
+main: roi611\plugin\Main
+version: 1.0.0
+api: 3.0.0
+load: POSTWORLD
+author: roi611
+description: リスキルは悪
